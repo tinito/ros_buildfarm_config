@@ -7,8 +7,7 @@ distributions:
       default: indigo/doc-build.yaml
       released-packages-without-doc-job: indigo/doc-released-build.yaml
     notification_emails:
-    - ros-buildfarm-indigo@googlegroups.com
-    - tfoote+buildfarm@osrfoundation.org
+    - martino.migliavacca@gmail.com
     release_builds:
       arm: indigo/release-armhf-build.yaml
       default: indigo/release-build.yaml
@@ -18,8 +17,7 @@ distributions:
     doc_builds:
       default: jade/doc-build.yaml
     notification_emails:
-    - ros-buildfarm-jade@googlegroups.com
-    - william+buildfarm@osrfoundation.org
+    - martino.migliavacca@gmail.com
     release_builds:
       arm: jade/release-armhf-build.yaml
       default: jade/release-build.yaml
@@ -27,12 +25,12 @@ distributions:
       default: jade/source-build.yaml
 doc_builds:
   independent-packages: doc-independent-build.yaml
-jenkins_url: http://54.183.26.131:8080
+jenkins_url: http://127.0.0.1:8080
 notification_emails:
-- dthomas+buildfarm@osrfoundation.org
+- martino.migliavacca@gmail.com
 prerequisites:
   debian_repositories:
-  - http://54.183.65.232/ubuntu/building
+  - http://127.0.0.1/ubuntu/building
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -68,8 +66,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
 status_page_repositories:
   default:
-  - http://54.183.65.232/ubuntu/building
-  - http://54.183.65.232/ubuntu/testing
-  - http://54.183.65.232/ubuntu/main
+  - http://127.0.0.1/ubuntu/building
+  - http://127.0.0.1/ubuntu/testing
+  - http://127.0.0.1/ubuntu/main
 type: buildfarm
 version: 1
